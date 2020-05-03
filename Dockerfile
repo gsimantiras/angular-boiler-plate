@@ -3,13 +3,14 @@
 ## label stage as builder
 FROM node:12.7-alpine AS builder
 
+
+WORKDIR /ng-app
+
 ## copy package.json and packag-lock (essential for next command)
 COPY package.json package-lock.json ./
 
 ## strict npm install, create workdir folder, move node modules
-RUN npm ci && mkdir /ng-app && mv ./node_modules ./ng-app
-
-WORKDIR /ng-app
+RUN npm install
 
 COPY . .
 

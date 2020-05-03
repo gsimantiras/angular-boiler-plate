@@ -1,0 +1,23 @@
+<mat-toolbar color="primary">
+  <span>{{ title }}</span>
+  <button
+    mat-flat-button
+    color="primary"
+    routerLinkActive="active"
+    routerLink="home"
+  >
+    Home
+  </button>
+  <button
+    mat-flat-button
+    color="primary"
+    routerLinkActive="active"
+    routerLink="admin"
+  >
+  Admin
+  </button>
+</mat-toolbar>
+
+<main>
+  <router-outlet></router-outlet>
+</main>

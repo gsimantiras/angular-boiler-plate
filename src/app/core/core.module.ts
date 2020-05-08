@@ -5,8 +5,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { StoreModule } from '@ngrx/store';
-import * as fromUser from './stores/user/user.reducer';
 
 @NgModule({
   declarations: [MainLayoutComponent],
@@ -19,9 +17,6 @@ import * as fromUser from './stores/user/user.reducer';
     // material
     MatToolbarModule,
     MatButtonModule,
-
-    // ngrx
-    StoreModule.forRoot({ user: fromUser.reducer }),
   ],
   exports: [MainLayoutComponent],
 })

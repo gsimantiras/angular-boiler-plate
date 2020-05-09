@@ -1,9 +1,9 @@
 import { RouterModule } from '@angular/router';
-import { ListComponent } from './components/list/list.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
+import { ListComponent } from './list/list.component';
 
 @NgModule({
   declarations: [ListComponent],
